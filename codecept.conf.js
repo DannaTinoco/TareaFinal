@@ -1,13 +1,13 @@
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',       // busca tests en la raíz
-  output: './output',         // reportes y capturas
+  tests: './*_test.js',      
+  output: './output',        
   helpers: {
     Playwright: {
-      browser: 'chromium',    // navegador a usar
+      browser: 'chromium',    
       url: 'https://www.mercadolibre.com.mx',
-      show: true,             // ver la ejecución
-      waitForTimeout: 5000    // tiempo máximo de espera por paso
+      show: true,            
+      waitForTimeout: 5000  
     }
   },
   include: {
