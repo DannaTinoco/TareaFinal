@@ -24,3 +24,7 @@ En la carpeta raíz del proyecto (`TareaFinal/`) ejecuta:
 ```bash
 npm install
 npx playwright install chromium
+npm i -D @codeceptjs/allure-legacy allure-commandline
+npx codeceptjs run --steps
+npx allure generate output/allure-results --clean -o output/allure-report
+npx allure open output/allure-report

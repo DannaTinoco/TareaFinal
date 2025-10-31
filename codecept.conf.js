@@ -14,18 +14,18 @@ exports.config = {
     I: './steps_file.js'
   },
   plugins: {
-    screenshotOnFail: {
-      enabled: true
-    },
-    retryFailedStep: {
-      enabled: true
-    },
-    tryTo: {
-      enabled: true
-    },
-    htmlReporter: {
-      enabled: true
-    }
+  htmlReporter: {
+    enabled: true
   },
+  allure: {
+    enabled: true,
+    require: '@codeceptjs/allure-legacy',
+    outputDir: 'output/allure-results',
+    screenshots: true,
+    fullPageScreenshots: true,
+    screenshotOnFail: true,
+    stepByStepReport: true
+  }
+},
   name: 'TareaFinal'
 }
